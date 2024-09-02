@@ -1,8 +1,8 @@
 ---
 name: InfLoop
 about: Create a report to help us improve
-title: "[RP-CS] <title here>"
-labels: Create Styled, Resource pack
+title: "[MP-IL] <title here>"
+labels: bug, InfLoop, Story-modpack
 assignees: ''
 
 ---
