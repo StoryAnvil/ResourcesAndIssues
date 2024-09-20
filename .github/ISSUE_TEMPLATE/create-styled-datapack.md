@@ -2,7 +2,7 @@
 name: Create Styled Datapack
 about: Create a report to help us improve
 title: "[DP-CS] <title here>"
-labels: Create Styled, Datapack, Resource pack
+labels: ''
 assignees: ''
 
 ---

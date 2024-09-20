@@ -1,8 +1,8 @@
 ---
-name: Create Styled
-about: Create a report to help us improve
-title: "[RP-CS] <title here>"
-labels: ''
+name: World 78
+about: Report problem in world 78
+title: "[MP-WRLD78] <title here>"
+labels: 'Project: World 78'
 assignees: ''
 
 ---

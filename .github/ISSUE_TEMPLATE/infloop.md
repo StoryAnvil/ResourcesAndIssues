@@ -2,7 +2,7 @@
 name: InfLoop
 about: Create a report to help us improve
 title: "[MP-IL] <title here>"
-labels: bug, InfLoop, Story-modpack
+labels: ''
 assignees: ''
 
 ---
