@@ -5,8 +5,7 @@ labels: ["Type: bug", "Project type: Modpack", "Project: Maken"]
 body:
   - type: markdown
       attributes:
-        value: |
-          Use [mclogs](https://mclo.gs/) or just type `/mclogs` in minecraft chat for publishing logs
+        value: "Use [mclogs](https://mclo.gs/) or just type `/mclogs` in minecraft chat for publishing logs"
   - type: input
     id: mclogs
     attributes:
