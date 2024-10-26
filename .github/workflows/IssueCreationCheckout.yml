@@ -18,4 +18,4 @@ jobs:
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
           gh issue comment $ISSUE --body "Thank you for opening this issue! We will try to resolve it ASAP"
-          gh issue edit $ISSUE --add-assignee StoryAnvil/support
+          gh issue edit $ISSUE --add-assignee @StoryAnvil/support
