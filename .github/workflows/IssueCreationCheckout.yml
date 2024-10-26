@@ -1,0 +1,19 @@
+name: IssueCreationCheckout
+
+on:
+  issues:
+    types:
+      - opened
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: |
+          gh issue comment $ISSUE --body "Thank you for opening this issue! We will try to resolve it ASAP"
+          gh issue edit $ISSUE --add-assignee StoryAnvil/support
