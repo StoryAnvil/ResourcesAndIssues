@@ -17,6 +17,6 @@ jobs:
           GH_TOKEN: ${{ secrets.TOKEN }}
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
-          gh auth login --with-token GH_TOKEN
+          gh auth login --with-token $GH_TOKEN
           gh issue comment $ISSUE --body "Thank you for opening this issue! @StoryAnvil/support will try to resolve it ASAP"
           gh issue edit $ISSUE --add-assignee @denisJaved
