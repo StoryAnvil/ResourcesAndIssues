@@ -1,0 +1,36 @@
+name: Report wiki problem
+description: Something about wiki isnot alright
+title: "[WIKI] <title here>"
+labels: ["Project: WIKI"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue form is all about changing wiki in some way.
+        Put link to wiki page below (leave empty if requesting new page)
+  - type: input
+    id: where
+    attributes:
+      label: Where is the problem?
+      placeholder: https://github.com/StoryAnvil/ResourcesAndIssues/wiki/...
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      value: | 
+        New page about ... needed or Page about ... has wrong information about... or any other stuff
+    validations:
+      required: true
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Little checking
+      options:
+        - label: I checked [issues](https://github.com/StoryAnvil/ResourcesAndIssues/issues) for duplicates
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem!
