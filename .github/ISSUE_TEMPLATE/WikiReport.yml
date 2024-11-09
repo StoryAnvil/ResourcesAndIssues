@@ -30,6 +30,8 @@ body:
       options:
         - label: I checked [issues](https://github.com/StoryAnvil/ResourcesAndIssues/issues) for duplicates
           required: true
+        - label: I want to contribute to the wiki
+          required: false
   - type: markdown
     attributes:
       value: |
