@@ -5,16 +5,20 @@ on:
     types:
       - opened
 
-  workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           ISSUE: ${{ github.event.issue.html_url }}
         run: |
           gh issue comment $ISSUE --body "Thank you for opening this issue! @StoryAnvil/support will try to resolve it ASAP"
