@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+contact_links:
+  - name: StoryAnvil Email
+    url: mailto:denisJavaOffical+storyanvil@yandex.ru
+  - name: StoryAnvil Wiki
+    url: https://storyanvil.github.io/page.html?wiki=home
+    about: Get information here
+  - name: Question&Answers
+    url: https://github.com/orgs/StoryAnvil/discussions/categories/q-a
+    about: Misc support
