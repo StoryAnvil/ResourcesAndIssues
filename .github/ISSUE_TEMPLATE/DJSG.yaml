@@ -7,7 +7,8 @@ body:
     id: nickname
     attributes:
       label: Your discord username
-      placeholder: @someone
+      placeholder: |
+        @someone
     validations:
       required: true
   - type: textarea
