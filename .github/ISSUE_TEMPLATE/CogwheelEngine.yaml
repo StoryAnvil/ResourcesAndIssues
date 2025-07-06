@@ -1,0 +1,24 @@
+name: Cogwheel Engine Bug Report
+description: Report bug in cogwheel engine
+title: "[MD-CG] <title here>"
+labels: ["Type: bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      value: | 
+        When I ... happends. However I except ... to happen
+    validations:
+      required: true
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Little checking
+      options:
+        - label: I checked [issues](https://github.com/StoryAnvil/ResourcesAndIssues/issues for duplicates
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting bug!
